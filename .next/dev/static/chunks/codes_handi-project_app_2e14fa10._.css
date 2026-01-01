@@ -1,0 +1,321 @@
+/* [project]/codes/handi-project/app/dashboard/Notification.module.css [app-client] (css) */
+.Notification-module__tyz8Tq__notification {
+  z-index: 10000;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+  animation: .3s ease-out Notification-module__tyz8Tq__slideDown;
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px #00000026;
+}
+
+@keyframes Notification-module__tyz8Tq__slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%)translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%)translateY(0);
+  }
+}
+
+.Notification-module__tyz8Tq__notificationContent {
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  display: flex;
+}
+
+.Notification-module__tyz8Tq__icon {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Notification-module__tyz8Tq__message {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.Notification-module__tyz8Tq__closeButton {
+  color: inherit;
+  cursor: pointer;
+  opacity: .8;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 20px;
+  transition: background .2s;
+  display: flex;
+}
+
+.Notification-module__tyz8Tq__closeButton:hover {
+  opacity: 1;
+  background: #fff3;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__success {
+  color: #fff;
+  background: #4caf50;
+  border: 1px solid #2e7d32;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__error {
+  color: #fff;
+  background: #d32f2f;
+  border: 1px solid #b71c1c;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__info {
+  color: #fff;
+  background: #2196f3;
+  border: 1px solid #1565c0;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__copy {
+  color: #fff;
+  background: #87ceeb;
+  border: 1px solid #5f9ea0;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__delete {
+  color: #fff;
+  background: #d32f2f;
+  border: 1px solid #b71c1c;
+}
+
+@media (max-width: 768px) {
+  .Notification-module__tyz8Tq__notification {
+    min-width: auto;
+    max-width: none;
+    left: 20px;
+    right: 20px;
+    transform: none;
+  }
+
+  @keyframes Notification-module__tyz8Tq__slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__success {
+    background: #2e7d32;
+    border-color: #1b5e20;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__error {
+    background: #c62828;
+    border-color: #b71c1c;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__info {
+    background: #1565c0;
+    border-color: #0d47a1;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__copy {
+    background: #5f9ea0;
+    border-color: #4682b4;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__delete {
+    background: #c62828;
+    border-color: #b71c1c;
+  }
+}
+
+/* [project]/codes/handi-project/app/protected/page.module.css [app-client] (css) */
+.page-module__iDHbVa__container {
+  min-height: 100vh;
+  font-family: var(--font-geist-sans);
+  background-color: #fafafa;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.page-module__iDHbVa__card {
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.page-module__iDHbVa__title {
+  color: #000;
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.page-module__iDHbVa__description {
+  color: #666;
+  margin: 0 0 32px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page-module__iDHbVa__loading {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 0;
+  display: flex;
+}
+
+.page-module__iDHbVa__spinner {
+  border: 4px solid #f3f3f3;
+  border-top-color: #667eea;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: 1s linear infinite page-module__iDHbVa__spin;
+}
+
+@keyframes page-module__iDHbVa__spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.page-module__iDHbVa__loading p {
+  color: #666;
+  margin: 0;
+  font-size: 14px;
+}
+
+.page-module__iDHbVa__actions {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  display: flex;
+}
+
+.page-module__iDHbVa__button {
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background .2s;
+}
+
+.page-module__iDHbVa__button:hover {
+  background: #333;
+}
+
+.page-module__iDHbVa__buttonSecondary {
+  color: #666;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.page-module__iDHbVa__buttonSecondary:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .page-module__iDHbVa__card {
+    padding: 24px;
+  }
+
+  .page-module__iDHbVa__title {
+    font-size: 24px;
+  }
+
+  .page-module__iDHbVa__actions {
+    flex-direction: column;
+  }
+
+  .page-module__iDHbVa__button, .page-module__iDHbVa__buttonSecondary {
+    width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-module__iDHbVa__container {
+    background-color: #000;
+  }
+
+  .page-module__iDHbVa__card {
+    background: #1a1a1a;
+  }
+
+  .page-module__iDHbVa__title {
+    color: #ededed;
+  }
+
+  .page-module__iDHbVa__description {
+    color: #999;
+  }
+
+  .page-module__iDHbVa__spinner {
+    border-color: #818cf8 #333 #333;
+  }
+
+  .page-module__iDHbVa__loading p {
+    color: #999;
+  }
+
+  .page-module__iDHbVa__button {
+    color: #000;
+    background: #ededed;
+  }
+
+  .page-module__iDHbVa__button:hover {
+    background: #ccc;
+  }
+
+  .page-module__iDHbVa__buttonSecondary {
+    color: #999;
+    border-color: #333;
+  }
+
+  .page-module__iDHbVa__buttonSecondary:hover {
+    background: #2a2a2a;
+    border-color: #555;
+  }
+}
+
+/*# sourceMappingURL=codes_handi-project_app_2e14fa10._.css.map*/

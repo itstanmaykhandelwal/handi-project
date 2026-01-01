@@ -1,0 +1,151 @@
+/* [project]/codes/handi-project/app/playground/page.module.css [app-client] (css) */
+.page-module__dOOW0G__container {
+  min-height: 100vh;
+  font-family: var(--font-geist-sans);
+  background-color: #fafafa;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.page-module__dOOW0G__card {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  box-shadow: 0 2px 8px #0000001a;
+}
+
+.page-module__dOOW0G__title {
+  color: #000;
+  margin: 0 0 8px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.page-module__dOOW0G__description {
+  color: #666;
+  margin: 0 0 32px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.page-module__dOOW0G__form {
+  flex-direction: column;
+  gap: 24px;
+  display: flex;
+}
+
+.page-module__dOOW0G__formGroup {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.page-module__dOOW0G__label {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.page-module__dOOW0G__input {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color .2s;
+}
+
+.page-module__dOOW0G__input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.page-module__dOOW0G__input:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+  background: #f5f5f5;
+}
+
+.page-module__dOOW0G__submitButton {
+  color: #fff;
+  cursor: pointer;
+  background: #000;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background .2s;
+}
+
+.page-module__dOOW0G__submitButton:hover:not(:disabled) {
+  background: #333;
+}
+
+.page-module__dOOW0G__submitButton:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .page-module__dOOW0G__card {
+    padding: 24px;
+  }
+
+  .page-module__dOOW0G__title {
+    font-size: 24px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-module__dOOW0G__container {
+    background-color: #000;
+  }
+
+  .page-module__dOOW0G__card {
+    background: #1a1a1a;
+  }
+
+  .page-module__dOOW0G__title {
+    color: #ededed;
+  }
+
+  .page-module__dOOW0G__description {
+    color: #999;
+  }
+
+  .page-module__dOOW0G__label {
+    color: #ededed;
+  }
+
+  .page-module__dOOW0G__input {
+    color: #ededed;
+    background: #000;
+    border-color: #333;
+  }
+
+  .page-module__dOOW0G__input:focus {
+    border-color: #818cf8;
+  }
+
+  .page-module__dOOW0G__input:disabled {
+    background: #0f0f0f;
+  }
+
+  .page-module__dOOW0G__submitButton {
+    color: #000;
+    background: #ededed;
+  }
+
+  .page-module__dOOW0G__submitButton:hover:not(:disabled) {
+    background: #ccc;
+  }
+}
+
+/*# sourceMappingURL=codes_handi-project_app_playground_page_module_css_bad6b30c._.single.css.map*/
