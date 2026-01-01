@@ -1,0 +1,150 @@
+/* [project]/codes/handi-project/app/dashboard/Notification.module.css [app-client] (css) */
+.Notification-module__tyz8Tq__notification {
+  z-index: 10000;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+  animation: .3s ease-out Notification-module__tyz8Tq__slideDown;
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px #00000026;
+}
+
+@keyframes Notification-module__tyz8Tq__slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%)translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%)translateY(0);
+  }
+}
+
+.Notification-module__tyz8Tq__notificationContent {
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  display: flex;
+}
+
+.Notification-module__tyz8Tq__icon {
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Notification-module__tyz8Tq__message {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.Notification-module__tyz8Tq__closeButton {
+  color: inherit;
+  cursor: pointer;
+  opacity: .8;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 20px;
+  transition: background .2s;
+  display: flex;
+}
+
+.Notification-module__tyz8Tq__closeButton:hover {
+  opacity: 1;
+  background: #fff3;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__success {
+  color: #fff;
+  background: #4caf50;
+  border: 1px solid #2e7d32;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__error {
+  color: #fff;
+  background: #d32f2f;
+  border: 1px solid #b71c1c;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__info {
+  color: #fff;
+  background: #2196f3;
+  border: 1px solid #1565c0;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__copy {
+  color: #fff;
+  background: #87ceeb;
+  border: 1px solid #5f9ea0;
+}
+
+.Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__delete {
+  color: #fff;
+  background: #d32f2f;
+  border: 1px solid #b71c1c;
+}
+
+@media (max-width: 768px) {
+  .Notification-module__tyz8Tq__notification {
+    min-width: auto;
+    max-width: none;
+    left: 20px;
+    right: 20px;
+    transform: none;
+  }
+
+  @keyframes Notification-module__tyz8Tq__slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__success {
+    background: #2e7d32;
+    border-color: #1b5e20;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__error {
+    background: #c62828;
+    border-color: #b71c1c;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__info {
+    background: #1565c0;
+    border-color: #0d47a1;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__copy {
+    background: #5f9ea0;
+    border-color: #4682b4;
+  }
+
+  .Notification-module__tyz8Tq__notification.Notification-module__tyz8Tq__delete {
+    background: #c62828;
+    border-color: #b71c1c;
+  }
+}
+
+/*# sourceMappingURL=codes_handi-project_app_dashboard_Notification_module_css_bad6b30c._.single.css.map*/

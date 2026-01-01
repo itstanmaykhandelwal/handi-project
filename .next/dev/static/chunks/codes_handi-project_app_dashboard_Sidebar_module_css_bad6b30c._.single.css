@@ -1,0 +1,271 @@
+/* [project]/codes/handi-project/app/dashboard/Sidebar.module.css [app-client] (css) */
+.Sidebar-module__BeZjAW__sidebar {
+  z-index: 100;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  flex-direction: column;
+  width: 260px;
+  height: 100vh;
+  transition: transform .3s ease-in-out, width .3s ease-in-out;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.Sidebar-module__BeZjAW__sidebar.Sidebar-module__BeZjAW__collapsed {
+  transform: translateX(-100%);
+}
+
+.Sidebar-module__BeZjAW__logo {
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 20px;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__logoIcon {
+  align-items: center;
+  gap: 2px;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__logoT {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Sidebar-module__BeZjAW__logoArrowRed {
+  color: #d32f2f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Sidebar-module__BeZjAW__logoArrowYellow {
+  color: #ffc107;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Sidebar-module__BeZjAW__logoText {
+  color: #000;
+  margin-left: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Sidebar-module__BeZjAW__personalSection {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 20px;
+}
+
+.Sidebar-module__BeZjAW__personalHeader {
+  cursor: pointer;
+  border-radius: 6px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  transition: background .2s;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__personalHeader:hover {
+  background: #f5f5f5;
+}
+
+.Sidebar-module__BeZjAW__avatar {
+  color: #fff;
+  background: #667eea;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__personalText {
+  color: #000;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Sidebar-module__BeZjAW__dropdownArrow {
+  color: #666;
+  font-size: 10px;
+}
+
+.Sidebar-module__BeZjAW__nav {
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+  padding: 8px 12px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.Sidebar-module__BeZjAW__menuItem {
+  color: #666;
+  border-radius: 6px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+  display: flex;
+  position: relative;
+}
+
+.Sidebar-module__BeZjAW__menuItem:hover {
+  color: #000;
+  background: #f5f5f5;
+}
+
+.Sidebar-module__BeZjAW__menuItem.Sidebar-module__BeZjAW__active {
+  color: #1976d2;
+  background: #e3f2fd;
+  font-weight: 600;
+}
+
+.Sidebar-module__BeZjAW__menuIcon {
+  text-align: center;
+  width: 20px;
+  font-size: 16px;
+}
+
+.Sidebar-module__BeZjAW__menuText {
+  flex: 1;
+}
+
+.Sidebar-module__BeZjAW__externalIcon {
+  opacity: .6;
+  font-size: 12px;
+}
+
+.Sidebar-module__BeZjAW__userFooter {
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__userAvatar {
+  color: #fff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__userInfo {
+  flex-direction: column;
+  flex: 1;
+  display: flex;
+}
+
+.Sidebar-module__BeZjAW__userName {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.Sidebar-module__BeZjAW__logoutButton {
+  cursor: pointer;
+  opacity: .7;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 18px;
+  transition: background .2s;
+}
+
+.Sidebar-module__BeZjAW__logoutButton:hover {
+  opacity: 1;
+  background: #f0f0f0;
+}
+
+@media (max-width: 1024px) {
+  .Sidebar-module__BeZjAW__sidebar {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Sidebar-module__BeZjAW__sidebar {
+    transition: transform .3s;
+    transform: translateX(-100%);
+  }
+
+  .Sidebar-module__BeZjAW__sidebar.Sidebar-module__BeZjAW__open {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .Sidebar-module__BeZjAW__sidebar {
+    background: #1a1a1a;
+    border-right-color: #333;
+  }
+
+  .Sidebar-module__BeZjAW__logo {
+    border-bottom-color: #333;
+  }
+
+  .Sidebar-module__BeZjAW__logoT, .Sidebar-module__BeZjAW__logoText {
+    color: #ededed;
+  }
+
+  .Sidebar-module__BeZjAW__personalSection {
+    border-bottom-color: #333;
+  }
+
+  .Sidebar-module__BeZjAW__personalHeader:hover {
+    background: #2a2a2a;
+  }
+
+  .Sidebar-module__BeZjAW__menuItem {
+    color: #999;
+  }
+
+  .Sidebar-module__BeZjAW__menuItem:hover {
+    color: #ededed;
+    background: #2a2a2a;
+  }
+
+  .Sidebar-module__BeZjAW__menuItem.Sidebar-module__BeZjAW__active {
+    color: #64b5f6;
+    background: #1e3a5f;
+  }
+
+  .Sidebar-module__BeZjAW__userFooter {
+    background: #0f0f0f;
+    border-top-color: #333;
+  }
+
+  .Sidebar-module__BeZjAW__userName {
+    color: #ededed;
+  }
+
+  .Sidebar-module__BeZjAW__logoutButton:hover {
+    background: #2a2a2a;
+  }
+}
+
+/*# sourceMappingURL=codes_handi-project_app_dashboard_Sidebar_module_css_bad6b30c._.single.css.map*/
